@@ -1,0 +1,240 @@
+
+.name {
+    font-family: 'Source Code Pro', monospace;
+    opacity: 0.75;
+    line-height: 32px;
+    animation: heading;
+    animation-duration:  1s;
+    animation-timing-function: ease-out;
+}
+
+.logo {
+    width: 35%;
+    height: 35%;
+    border-bottom-left-radius: 25%;
+    border-top-right-radius: 25%;
+    animation: scaling;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+.btn {
+    color: white;
+    opacity: 0.5;
+}
+
+.aboutme {
+    border: 0.2px white solid;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.contact, .education {
+    border: 0.2px white solid;
+    border-radius: 0%;
+}
+
+.interests {
+    border: 0.2px white solid;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.card {
+    animation: scaling;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+/* On-hover */
+
+.aboutme:hover {
+    background-color: beige;
+    border: 0.2px white solid;
+    color: black;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+
+}
+
+.contact:hover, .education:hover {
+    background-color: beige;
+    border: 0.2px white solid;
+    color: black;
+    border-radius: 0%;
+}
+
+.interests:hover {
+    background-color: beige;
+    border: 0.2px white solid;
+    color: black;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.bar, footer {
+    animation: barup 1.0s ease;
+}
+
+/* using media query to solve button borders */
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        width: 75%;
+        height: 75%;
+        animation: scaling;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    }
+
+    .aboutme {
+        border-top-right-radius: 0%;
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 0%
+    }
+    
+    .contact {
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+    }
+
+    .education {
+        border-top: 0%;
+        border-bottom-right-radius: 0%;
+    }
+    
+    .interests {
+        border-top-left-radius: 0%;
+        border-top-right-radius: 0%;
+        border-bottom-left-radius: 0%;
+    }
+
+    /* On-hover */
+
+.aboutme:hover {
+    background-color: beige;
+    color: black;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.contact:hover, .education:hover {
+    background-color: beige;
+    color: black;
+    border-radius: 0%;
+}
+
+.interests:hover {
+    background-color: beige;
+    color: black;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+}
+
+/* About Nikhil */
+
+.card {
+    background-color: black;
+}
+
+footer.home {
+    margin-top: 150px;
+}
+
+
+.kidding {
+    font-size: 7px;
+}
+
+/* scaling animation */
+
+@keyframes scaling {
+    from {
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes heading {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.75;
+    }
+}
+
+@keyframes barup {
+    from {
+        transform: translateY(300px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Contact Page */
+
+@media screen and (max-width: 768px) {
+    .custom-card {
+        border: 2px cadetblue solid;
+        border-radius: 2px;
+        width: 70%;
+        display: inline-block;
+        margin: 25px;
+        padding: 25px;
+        font-family: 'Source Code Pro', monospace;       
+    }
+
+    .custom-card button {
+        background-color: cadetblue;
+        border-radius: 7px;
+        border: black solid 0.5px;
+        width: 55%;
+        color: black;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .custom-card {
+        border: 2px cadetblue solid;
+        border-radius: 2px;
+        width: 25%;
+        display: inline-block;
+        margin: 25px;
+        padding: 25px;
+        font-family: 'Source Code Pro', monospace;       
+
+    }
+
+    .custom-card button {
+        background-color: cadetblue;
+        border-radius: 7px;
+        border: black solid 0.5px;
+        width: 55%;
+    }
+
+    .custom-card button:hover {
+        background-color: black;
+        color: cadetblue;
+    }
+}
+
+img {
+    background-color: cadetblue;
+
+}
+
+.footer-p {
+    text-align: center;
+}
