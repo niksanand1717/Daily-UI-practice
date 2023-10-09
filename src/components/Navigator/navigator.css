@@ -1,0 +1,8 @@
+.navigationBar {
+    margin: auto;
+    width: 80%;
+    background: linear-gradient(white, 0.5); 
+    border-radius: 14px;
+    /* border: black solid 2px;   */
+    backdrop-filter: blur(12px);
+}

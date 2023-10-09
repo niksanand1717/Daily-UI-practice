@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import PageContext from "../../context/Navigator";
+import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import "./navigator.css";
 
 export default function Navigator() {
   const { page, setPage } = React.useContext(PageContext);
@@ -21,14 +24,14 @@ export default function Navigator() {
   // console.log(page.pageno);
 
   return (
-    <div className="fixed-bottom bg-dark text-white p-3 mt-0">
+    <div className="fixed-bottom navigationBar bg-transparent text-secondary p-3 mt-0">
       <div className="container d-flex flex-row align-items-center justify-content-between">
         <button className="btn btn-warning" onClick={handlePrev}>
-          previous
+          <FontAwesomeIcon icon={faArrowLeft} />
         </button>
         <span className="fs-3 fw-bolder">{page.pageno}</span>
         <button className="btn btn-warning" onClick={handleNext}>
-          next
+          <FontAwesomeIcon icon={faArrowRight} />
         </button>
       </div>
     </div>
