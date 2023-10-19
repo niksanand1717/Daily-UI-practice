@@ -9,6 +9,7 @@ import Day02 from "./components/Day 02/day_02";
 import Navigator from "./components/Navigator/Navigator";
 import PageContext from "./context/Navigator";
 import TodoWrapper from "./components/todo-list/TodoWrapper";
+import Board from "./components/tic-tac-toe/Board";
 
 function App() {
   const { page } = React.useContext(PageContext);
@@ -40,6 +41,7 @@ function App() {
           <Route path="/" element={<Day01 />} />
           <Route path="/day01" element={<Day02 />} />
           <Route path="/todolist" element={<TodoWrapper />} />
+          <Route path="/tictactoe" element={<Board />} />
         </Routes>
         <Navigator className="fixed-bottom" />
       </Router>
