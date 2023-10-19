@@ -4,17 +4,18 @@ import "./App.css";
 import React from "react";
 import Day00 from "./components/Day 0/day_00";
 import Day01 from "./components/Day 01/day_01";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Day02 from "./components/Day 02/day_02";
 import Navigator from "./components/Navigator/Navigator";
 import PageContext from "./context/Navigator";
+import TodoWrapper from "./components/todo-list/TodoWrapper";
 
 function App() {
-  // const { page } = React.useContext(PageContext);
+  const { page } = React.useContext(PageContext);
 
   // let path = `/day0${page.pageno}`;
   // console.log(path);
-  // const pgno = `${page.pageno}`;
+  const pgno = page.pageno;
   // // console.log(pgno);
   // if (pgno == 0) {
   //   path = "/";
@@ -35,9 +36,10 @@ function App() {
     <div className="">
       <Router>
         <Routes>
-          {/* <Route path="/" element={<Day00 />} /> */}
+          <Route path="/" element={<Day00 />} />
           <Route path="/" element={<Day01 />} />
           <Route path="/day01" element={<Day02 />} />
+          <Route path="/todolist" element={<TodoWrapper />} />
         </Routes>
         <Navigator className="fixed-bottom" />
       </Router>

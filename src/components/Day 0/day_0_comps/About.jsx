@@ -34,7 +34,7 @@ function About() {
               <p class="card-text  text-muted fw-light">
                 Completed `Python for Everybody` <br /> Specialisation by Dr.
                 Chuck <br />
-                Proudly Python L**er
+                Python
               </p>
               <a href="" class="btn btn-outline-secondary w-75">
                 Certificates
