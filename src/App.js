@@ -43,7 +43,7 @@ function App() {
           <Route path="/todolist" element={<TodoWrapper />} />
           <Route path="/tictactoe" element={<Board />} />
         </Routes>
-        <Navigator className="fixed-bottom" />
+        {/* <Navigator className="fixed-bottom" /> */}
       </Router>
     </div>
   );
